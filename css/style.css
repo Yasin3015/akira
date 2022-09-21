@@ -1,0 +1,533 @@
+/* ========================= header and nav bar ================================= */
+.header {
+    background-color: hsla(355, 83%, 65%);
+    color: white;
+    padding: 5px 0;
+}
+.elementor p {
+    margin: 5px;
+    border-left: 1px solid white;
+    padding-left: 5px;
+    
+}
+.elementer-one p {
+    padding-left: 15px;
+    margin: 5px;
+
+
+}
+@media (max-width:1025px) {
+    .header {
+        display: none;
+    }
+    
+}
+.navbar-toggler {
+    border: 1px solid black;
+    padding: 10px 10;
+    transition: none
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none
+}
+
+.offcanvas{
+    background-color: white !important;
+    color: black !important;
+}
+
+.navbar {
+    padding: 20px 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar a:hover {
+    color: hsla(355, 83%, 65%);
+}
+
+.icons span {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.icons span:hover {
+    color: hsla(355, 83%, 65%);
+}
+
+.home img {
+    width: 150px;
+}
+
+.navbar-nav {
+    position: relative;
+}
+
+.home {
+    min-width: 900px;
+    left: -50px;
+}
+
+.home[data-bs-popper] {
+    top: 100%;
+    left: -250px;
+
+}
+
+@media (max-width:992px) {
+    .offcanvas-body {
+        position: relative;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    .home {
+        position: absolute;
+        min-width: 100%;
+        left: 0px;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .home .row {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .home img {
+        width: 60px;
+    }
+
+}
+/* ============================= FIRST SLIDER ======================== */
+.intro-slider .carousel {
+    padding: 20px 0;
+}
+.intro-slider  .carousel-item {
+    height: 80vh;
+    position: relative;
+}
+.intro-slider  .carousel-item img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.carousel .carousel-control-next {
+    right: 50px;
+}
+.carousel .carousel-control-prev {
+ 
+    left: 50px;
+}
+.slide-capthins {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+.litter {
+    letter-spacing: 10px;
+    margin-bottom: 15px;
+}
+.boxs img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.box {
+    overflow: hidden;
+}
+.box:hover .date {
+transform: rotate(5deg) scale(1.3);
+transition: all .75s;
+}
+.box {
+    position: relative;
+}
+.box button {
+    position: absolute;
+    bottom:70px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+    width: fit-content;
+    background-color: #f8f9fa99;
+}
+
+/* ========================= PRODUCTS SLIDER ============================== */
+
+.product .row {
+    height: 50%;
+    overflow-y: hidden;
+}
+.card{
+    border: none;
+}
+.tab-content .carousel .container{
+    height: 140vh;
+    background-color: #F8F9FA !important;
+}
+.product .card, .best .card {
+    padding-top: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden !important;
+}
+
+.product .card .card-img-top,
+.best .card .card-img-top {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: aqua !important;
+}
+.best .row{
+    height: 60vh;
+    overflow: hidden !important;
+}
+@media (max-width:400px) {
+    .best .row{
+        height: 60vh;
+        margin-top: 50px;
+        font-size: 13px !important;
+        overflow: hidden !important;
+    }
+}
+.card-img-top img {
+    width: 100% !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.card:hover .hidden {
+    display: inline-block;
+}
+
+.card:hover .visible {
+    display: none;
+}
+
+.btn {
+    background-color: hsla(355, 83%, 65%, 0.612);
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    left: 0px;
+    z-index: 1000;
+    border-radius: 0px !important;
+    color: white;
+}
+
+.btn:hover {
+    background-color: hsla(355, 83%, 65%) !important;
+    color: white !important;
+}
+
+.card-img-top:hover .btn {
+    bottom: 0px;
+    transition: all .75s;
+}
+
+.card-img-top:hover .side-buttons {
+    right: 10px;
+    transition: all .75s;
+}
+
+.side-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white !important;
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    z-index: 1000;
+}
+
+.side-buttons .my-btn {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    margin: 10px;
+    color: rgb(97, 94, 94);
+}
+
+@media (max-width:540px) {
+    .side-buttons .my-btn {
+        background-color: white;
+        border: none;
+        font-size: 16px;
+        margin: 5px;
+        color: rgb(97, 94, 94);
+    }
+}
+.carousel button span {
+    opacity: 0 ;
+    color: black !important;
+    background-color: black !important;
+}
+.carousel:hover.carousel button span{
+    opacity: 1 !important;
+}
+.nav-item button{
+    background-color: inherit;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 5px;
+    font-size: 20px;
+    color: rgb(73, 73, 73);
+}
+.nav-item button:hover,
+.nav-item .active{
+    color: black !important;
+    border-bottom: 2px solid hsla(355, 83%, 65%)  !important;
+}
+
+
+/* ======================= TESTIMONAL SLIDER SECTION ===================== */
+.testimonal .carousel-caption {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.testimonal .carousel-caption img{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50%;
+}
+.testimonal{
+    background: url("../imgs/demo2-bg_testi.jpg");
+    background-attachment:fixed !important;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.636);
+}
+.testimonal .carousel-item {
+    height: 80vh !important;
+}
+
+.testimonal .carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.testimonal .info {
+    color: white !important;
+    text-align: center;
+    width: 60% !important;
+    margin: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.testimonal h1{
+    color: white;
+}
+@media (max-width: 540px) {
+    .testimonal .info {
+        width: 90% !important;
+    }
+    .testimonal .carousel-item {
+        height: 85vh !important;
+    }
+    .testimonal h1{
+        font-size: 30px !important;
+    }
+}
+
+/* ====================== FETURED PRODUCTS ============================== */
+
+.background{
+    background-image: url("../imgs/demo2-bg2.jpg");
+    background-size: cover !important;
+    background-position: center center;
+}
+.text-center h1, 
+.text-left h1{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.text-center span,
+.text-left span{
+    text-transform: uppercase;
+    color: gray;
+    letter-spacing: 4px;
+}
+.background .text-left .btn-link{
+    background-color: hsla(355, 83%, 65%, 0.612);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.background .text-left .btn-link:hover{
+    background-color: hsla(355, 83%, 65%);
+}
+
+/* =============================== BLOGS SECTION ======================== */
+.blogs .card{
+    border: none;
+    height: 100%;
+}
+.blogs .row {
+    height: 70vh ;
+    overflow: hidden;
+}
+.blogs .card .content{
+    border: .5px solid rgb(78, 78, 78);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.blogs .card .card-img-top{
+    position: relative;
+    padding: 0px !important;
+}
+.blogs .card .card-img-top img{
+    width: 100% ;
+}
+.blogs .card .card-img-top span{
+    top: 0;
+    right: 0;
+    background-color: hsla(355, 83%, 65%);
+    color: white;
+    z-index: 10000;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: absolute;
+}
+.blogs .card .content h6{
+    text-transform: capitalize;
+}
+.blogs .card .content h6:hover{
+    color: hsla(355, 83%, 65%);
+}
+.blogs .card .content a{
+    color: hsla(355, 83%, 65%);
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+@media (max-width: 360px) {
+    .blogs .row{
+        height: 100vh;
+    }
+}
+
+/* ============================ FOOTER STYLING =========================== */
+footer{
+    color: gray;
+}
+footer .footer-content div{
+    width: 20%;
+    padding: 10px;
+}
+footer .footer-content h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 25px ;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: white;
+}
+footer .footer-content .contact p{
+    font-size: 15px;
+    color: white;
+}
+footer .footer-content .contact span,
+footer .footer-content a{
+    color: gray;
+    text-decoration: none;
+}
+.footer-links{
+    width: 100% !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+footer .footer-content .footer-links a{
+    display: block;
+    font-size: 18px;
+    padding: 5px;
+    padding-left: 20px !important;
+    width: 100% !important;
+    text-align: left !important;
+}
+footer .footer-content .footer-links a:hover{
+    color: white !important;
+}
+.footer-content i{
+    display: none;
+}
+.footer-content{
+    border-bottom: 1px solid gray;
+}
+@media (max-width: 992px) {
+    footer .logo{
+        width: 100% !important;
+    }
+    footer .info{
+        width: 50% !important;
+    }
+}
+@media (max-width: 540px) {
+    footer .logo{
+        width: 100% !important;
+    }
+    footer .info{
+        width: 100% !important;
+    }
+    .footer-content i{
+        display: inline-block;
+    }
+    
+    footer .info .footer-links{
+        height: 0px;
+        display: none;
+        overflow: hidden;
+    }
+    .footer-content .info h2:hover .footer-links{
+        height: fit-content !important;
+        display: inline-block;
+        transition: all 2s !important;
+    }
+}
